@@ -1,11 +1,14 @@
 {
   "name": "eslint-config-welcome",
-  "version": "1.0.0",
+  "module": "src/index.js",
+  "version": "1.0.1",
   "description": "ESLint proposed configuration for Welcome Pickups JavaScript projects",
   "main": "index.js",
   "scripts": {
     "release": "npm publish",
-    "release-beta": "npm publish --tag beta"
+    "release-beta": "npm publish --tag beta",
+    "prerelease": "npm run build",
+    "build": "rollup -c rollup.config.js -f cjs -o $npm_package_main $npm_package_module"
   },
   "keywords": [
     "eslint",
@@ -40,5 +43,9 @@
   "peerDependencies": {
     "eslint": ">=5.0.0",
     "prettier": "^1.16.4"
+  },
+  "devDependencies": {
+    "rollup": "^1.7.3",
+    "rollup-plugin-buble": "^0.19.6"
   }
 }

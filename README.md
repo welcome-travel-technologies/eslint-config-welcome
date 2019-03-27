@@ -5,19 +5,23 @@ ESLint proposed configuration for Welcome Pickups JavaScript projects
 # Include these rules in your project
 
 ## Installation
-Run `npm install -D eslint prettier eslint-config-welcome`
+Run `npm install -D eslint prettier eslint-config-welcome babel-eslint`
 
 To use these rules on your project, add the Welcome Pickups configuration on your `.eslintrc` file.
 
-*.prettierrc*
+*.eslintrc*
 ```js
 {
-  extends: 'eslint-config-welcome'
+  "extends": "eslint-config-welcome",
+  "parser": "babel-eslint"
 }
 ```
 
 ## Contributing
 All rules are grouped by concern under [`src/rules`](src/rules), please add or edit rules there.
+The main index.js file is generated on build and is used only by NPM.
+
+The code is transpiled using [bublé-rollup](https://github.com/rollup/rollup-plugin-buble).
 
 ## Prettier proposed rules
 
