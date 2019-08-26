@@ -4,7 +4,7 @@ import standards from "./rules/standards";
 
 export default {
   parser: require.resolve("babel-eslint"),
-  extends: ["airbnb", "prettier", "prettier/react"],
+  extends: ["airbnb", "prettier", "prettier/react", "plugin:jsdoc/recommended"],
   plugins: ["prettier"],
   env: {
     browser: true,
