@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-welcome",
   "module": "src/index.js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "ESLint proposed configuration for Welcome Pickups JavaScript projects",
   "main": "index.js",
   "scripts": {
@@ -29,24 +29,24 @@
     "url": "https://github.com/welcome-travel-technologies/eslint-config-welcome.git"
   },
   "dependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsdoc": "^15.8.3",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsdoc": "^15.9.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3"
   },
   "peerDependencies": {
     "eslint": ">=5.0.0",
     "prettier": "^1.16.4"
   },
   "devDependencies": {
-    "rollup": "^1.7.3",
-    "rollup-plugin-buble": "^0.19.6"
+    "rollup": "^1.21.3",
+    "rollup-plugin-buble": "^0.19.8"
   }
 }
